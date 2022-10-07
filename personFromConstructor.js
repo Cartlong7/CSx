@@ -1,5 +1,3 @@
-// ### Challenge
-
 function PersonConstructor() {
   this.greet = function() {
     console.log('hello');
