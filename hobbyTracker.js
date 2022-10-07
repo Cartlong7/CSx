@@ -1,17 +1,14 @@
-function hobbyTracker(hobbies) {
+function hobbyTracker(hobbies){
   let cache = {};
   hobbies.forEach(el => {cache[el] = 0})
-  function hobbyFunc(hobby, hours){
-    if (arguments.length == 0){
-      for (let prop in cache) {
-        cache[prop] = 0;
-      }
+  return function hobbyFunc(hobby, hours){
+    if (hobby === undefined){
+      Object.keys(cache).forEach(key => {cache[key] = 0})
       return 'tracker has been reset!'
     }
     cache[hobby] += hours;
     return cache;
   }
-  return hobbyFunc;
 }
 
 
