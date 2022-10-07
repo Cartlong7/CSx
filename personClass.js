@@ -5,7 +5,8 @@ class PersonClass {
 	}
 	// add a method greet that logs 'hello'
 	greet(){
-    console.log('hello');}
+    console.log('hello');
+  }
 }
 
 const george = new PersonClass('George');
