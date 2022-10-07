@@ -1,12 +1,10 @@
 const dateStamp = (callback) => {
-  const findDate = (...args) => {
+  return function (...args){
     const cache = {};
-    const newDate = new Date().toDateString();
-    cache.date = newDate;
+    cache.date = new Date().toDateString();
     cache.output = callback(...args);
-    return cache
+    return cache;
   }
-  return findDate;
 }
 
 // Uncomment these to check your work!
