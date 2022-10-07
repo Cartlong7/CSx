@@ -6,9 +6,6 @@ class PersonClass {
     console.log('hello');
   }
 }
-
-// create a class Developer Class that creates objects by extending PersonClass
-// add a method introduce that logs the string "Hello World, my name is [name]"
 class DeveloperClass extends PersonClass {
   constructor(name, greet) {
     super(name, greet);
