@@ -1,4 +1,4 @@
-const getLength = (array, length = 0) => array[0] === undefined ? length : getLength(array.slice(0, -1), length + 1);
+const getLength = (array, index = 0) => array[index] === undefined ? index : getLength(array, ++index);
 // To check if you've completed the challenge, uncomment these console.logs!
 console.log(getLength([1])); // -> 1
 console.log(getLength([1, 2])); // -> 2
