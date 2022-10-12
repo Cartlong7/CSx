@@ -1,9 +1,7 @@
-const pluralize = (arrayOfStrings) => {
-  let output = [];
-	for (let i = 0; i < arrayOfStrings.length; i++) {
-    output.push(arrayOfStrings[i] + 's');
-  }
-  return output;
+const pluralize = (stringArr) => {
+  const plurArr = [];
+	stringArr.forEach(el => plurArr.push(el + 's'));
+  return plurArr;
 }
 
 // Uncomment these to check your work!
