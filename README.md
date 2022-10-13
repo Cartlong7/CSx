@@ -3,6 +3,6 @@
 
 ### My goal is to work through the provided challenges on [CSX](https://csx.codesmith.io/home) to solidfy my understanding of Javascript fundamentals. In doing so, my hope is to gain acceptance into the full-time immersive program with Codesmith. The end goal of this process is to secure full-time employment as a SWE. 
 
-### Let's get it 🚀🚀🚀 
+### 🚀🚀🚀 
 
 ![Never Give Up!](https://media.tenor.com/2PlWRlGozeoAAAAd/matsuoka-shuzo-never-give-up.gif)
