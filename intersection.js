@@ -1,3 +1,4 @@
+// First solution 0(n)?
 const intersection = (arrays) => {
   return arrays.reduce((a, b) => {
 		if (!a || !b) return;
@@ -5,6 +6,17 @@ const intersection = (arrays) => {
     return b.filter(element => a.includes(element));
   }, []);
 }
+
+// Second solution O(n^2)?
+const intersection = arrays => {
+  return arrays.reduce((acc, currentValue) => {
+    let newArray = [];
+    acc.forEach((element) => {
+      if (currentValue.includes(element)) newArray.push(element);
+    }); 
+    return newArray;
+  });
+};
 
 // Uncomment these to check your work!
 const arr1 = [5, 10, 15, 20];
