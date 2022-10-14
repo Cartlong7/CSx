@@ -1,8 +1,6 @@
-const createFunctionWithInput = (input) => {
-  const inputFunction = () => {
-		return input;
-  }
-  return inputFunction;
+const createFunctionWithInput = input => {
+  const inputComeInputGo = () => input;
+  return inputComeInputGo;
 }
 
 // UNCOMMENT THESE TO TEST YOUR WORK!
