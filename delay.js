@@ -5,6 +5,15 @@ const delay = (cb, wait) => {
   return waitTime;
 }
 
+// OR...
+
+const delay = (cb, wait) => {
+  return function(){
+    setTimeout(cb, wait);
+  }
+}
+
+
 // UNCOMMENT THE CODE BELOW TO TEST DELAY
 let count = 0;
 const delayedFunc = delay(() => count++, 1000);
