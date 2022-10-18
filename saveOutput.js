@@ -1,14 +1,10 @@
-const saveOutput = (cb, string) => {
-  let object = {};
-  const mimicFunction = (pw) => {
-    if (pw === string) {
-      return object;
-    } else{
-    object[pw] = cb(pw);
-    return cb(pw);
-    }
-  } 
-    return mimicFunction;
+const saveOutput = (func, password) => {
+      let cache = {};
+  return function(arg) {
+    if (arg === password) return cache;      
+    cache[arg] = func(arg);
+  	return func(arg)
+  }
 }
 
 // Uncomment these to check your work!
