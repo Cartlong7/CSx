@@ -1,8 +1,7 @@
 const defineFirstArg = (func, argument) => {
-  const passedIn = (...arg) => {
-    return func(argument, ...arg);
+  return function(...args){
+    return func(argument, ...args);
   }
-  return passedIn;
 }
 
 // Uncomment these to check your work!
