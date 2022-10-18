@@ -1,8 +1,8 @@
 const cycleIterator = (array) => {
   return function(){
-    const element = array.shift();
-    array.push(element);
-    return element;    
+    const day = array.shift();
+    array.push(day);
+    return day;    
   }
 }
 
