@@ -1,4 +1,14 @@
 const cycleIterator = (array) => {
+  return function(){
+    const element = array.shift();
+    array.push(element);
+    return element;    
+  }
+}
+
+// OR ...
+
+const cycleIterator = (array) => {
 	let index = 0;
   const whatDayIsIt = () => {
     const result = array[index++];
