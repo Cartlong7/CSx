@@ -1,8 +1,6 @@
 function PersonConstructor() {
-	// use this to declare a method greet and set it to a function that logs 'hello'
-  this.greet = function (){
-    console.log('hello');
-  }
+	// uses this keyword to save a property on its scope called greet
+  this.greet = function(){console.log('hello')};
 }
 
 const simon = new PersonConstructor();
