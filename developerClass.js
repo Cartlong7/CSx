@@ -2,15 +2,14 @@ class PersonClass {
 	constructor(name) {
     this.name = name;
 	}
+
 	greet() {
     console.log('hello');
   }
 }
+
 class DeveloperClass extends PersonClass {
-  constructor(name, greet) {
-    super(name, greet);
-  }
-  introduce(){
+  introduce() {
     console.log(`Hello World, my name is ${this.name}`);
   }
 }
