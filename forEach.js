@@ -1,14 +1,12 @@
-const forEach = (array, cb) => {
-  for (let i = 0; i < array.length; i++) {
-  	cb(array[i]);
+const forEach = (arr, cb) => {
+  for (let i = 0; i < arr.length; i++) {
+    cb(arr[i]);
   }
 }
 
-const map = (array, cb) => {
+const map = (arr, cb) => {
   const newArr = [];
-  forEach(array, function(element) {
-          newArr.push(cb(element));
-  });
+  forEach(arr, el => newArr.push(cb(el)));
   return newArr;
 }
 
