@@ -1,10 +1,7 @@
-function arrToObj(array, callback) {
-  // output is an object that has elements from passed-in array as keys and the outputs from t he callback as the value
-  const capitalObj = {};
-  for (let i = 0; i < array.length; i++) {
-    capitalObj[array[i]] = callback(array[i]);
-  }
-  return capitalObj;
+const arrToObj = (arr, cb) => {
+  const newObj = {};
+  arr.forEach(el => newObj[el] = cb(el));
+  return newObj;
 }
 
 // Uncomment these to check your work!
