@@ -1,9 +1,9 @@
-const countBy = (array, cb) => {
-	return array.reduce((acc, cur) => {
+const countBy = (arr, cb) => {
+	return arr.reduce((acc, cur) => {
     const key = cb(cur);
     acc[key] = acc[key] + 1 || 1;
     return acc;
-  }, {})
+  }, {});
 }
 
 // Uncomment these to check your work!
