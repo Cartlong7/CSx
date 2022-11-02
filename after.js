@@ -4,14 +4,14 @@
     // increment counter
     // if counter is greater than or equal to callCount
       // return cb with the argument of spread parameter args
-const after = (num, cb) => {
-  let counter = 0;
-  return function(...args) {
-    counter++;
-    if (counter >= num) {
-			return cb(...args);
-    } 
+const after = (calls, cb) => {
+  let count = 0;
+  const callFunc = (...args) => {
+    count++;
+    if (count < calls) return undefined
+    return cb(...args);
   }
+  return callFunc;
 }
 
 const called = function(string) { return('hello ' + string); };
