@@ -1,8 +1,6 @@
-const delay = (cb, wait) => {
-  const waitTime = () => {
-    setTimeout(cb, wait);
-  }
-  return waitTime;
+const delay = (cb, waitTime) => {
+  const wait = () => setTimeout(cb, waitTime);
+  return wait;
 }
 
 // OR...
