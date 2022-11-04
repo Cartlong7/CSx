@@ -1,14 +1,12 @@
 const censor = () => {
   const cache = {};
-  return function(stringOne, stringTwo) {
-    if (stringTwo) {
-      cache[stringOne] = stringTwo;
+  return function(string1, string2) {
+    if (string2) {
+      cache[string1] = string2;
       return;
-    } 
-    Object.keys(cache).forEach(key => {
-      stringOne = stringOne.replace(key, cache[key]);
-    });
-    return stringOne;
+    }
+    Object.keys(cache).forEach(key => string1 = string1.replace(key, cache[key]));
+    return string1;
   }
 }
 // Uncomment these to check your work!
