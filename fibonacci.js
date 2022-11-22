@@ -1,16 +1,10 @@
-function fibonacci(n, memo = {}) {
-  // const memo = {};
-  //base cases
+function fib(n, memo = {}) {
+	if (n in memo) return memo[n];
   if (n === 0) return 0;
   if (n === 1) return 1;
-  //base case with memo
-  if (memo[n]) return memo[n];
-  
-  //recursive case
-  const result = fibonacci(n - 1) + fibonacci(n - 2);
-  memo[n] = result;
-  return result;
-};
+  memo[n] = fib(n - 1, memo) + fib(n - 2, memo);
+  return memo[n];
+}
 
 const output = fibonacci(40);
 
